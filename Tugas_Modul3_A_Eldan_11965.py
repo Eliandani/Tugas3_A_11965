@@ -71,7 +71,7 @@ if uploaded_file is not None:
     st.markdown('<h3 style="text-align: center; color: #00736e;">Data yang diupload:</h3>', unsafe_allow_html=True)
     st.dataframe(input_data)
 
-    model_path = r'D:\Documents Eliandani\Tugas\Semester 5\Machine Learning\Tugas3_A_11965\SVR_IPK_model.pkl'
+    model_path = r'SVR_IPK_model.pkl'
     
     if os.path.exists(model_path):
         with open(model_path, 'rb') as f:
